@@ -8,19 +8,16 @@ class PinsController < ApplicationController
   # GET /pins.json
   def index
     @pins = Pin.all
-      respond_with(@pins)
   end
 
   # GET /pins/1
   # GET /pins/1.json
   def show
-    respond_with(@pin)
   end
 
   # GET /pins/new
   def new
     @pin = current_user.pins.build
-    respond_with(@pin)
   end
 
   # GET /pins/1/edit
@@ -63,7 +60,7 @@ class PinsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def pin_params
-      params.require(:pin).permit(:description)
+      params.require(:pin).permit(:description, :image)
     end
     
     def correct_user
