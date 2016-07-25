@@ -1,6 +1,11 @@
 $jumbotron-bg: #BDBFBF;
-$navbar-default-bg: #ED0920;
-$body-bg: #FAF5F5;
+$navbar-default-bg: #ffffff;
+$navbar-default-brand-color: #CB2027;
+$navbar-height: 40px;
+$body-bg: #E9E9E9;
+$brand-primary: #CB2027;
+$pagination-active-bg: #CB2027;
+$pagination-active-border: #CB2027;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
