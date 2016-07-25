@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :pins
   devise_for :users
-  root 'home#index'
+  root 'pins#index'
   get 'home/about'
   get 'users/sign_up'
   get 'users/sign_in'
